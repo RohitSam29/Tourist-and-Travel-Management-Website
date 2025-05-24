@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5c3c5c30d2.js" crossorigin="anonymous"></script> 
+    <link rel="icon" href="src\bin\Images\logo5.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="src\bin\Images\logo5.ico" type="image/x-icon"/>
+    <title>TravelNow</title>
+</head>
+<body>
+<!------------------------------HEADER--------------------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="lib/img/Logo/Logo3.png" class="Logo" width = "100" height = "100"></img>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="auth.html"><i class="fas fa-user fa-sm"></i></a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Welcome to<br><span id="element"></span></h1>
+            </div>
+        </div>
+    </div>
+<!----------------------------------ABOUT------------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="lib/img/About/About us.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>About</span> Us</h1>
+                    <p>Welcome to TravelNow! We are a dedicated team of travel enthusiasts committed to making your travel dreams come true. Explore our site to find the best travel packages and services tailored to your needs.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('mission')">Our Mission</p>
+                        <p class="tab-links" onclick="opentab('vision')">Our Vision</p>
+                        <p class="tab-links" onclick="opentab('values')">Our Values</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="mission">
+                        <p>To provide personalized travel experiences that exceed our customers' expectations.</p>
+                    </div>
+                    <div class="tab-contents" id="vision">
+                        <p>To be the most trusted and innovative travel management company in the industry.</p>
+                    </div>
+                    <div class="tab-contents" id="values">
+                        <ul>
+                            <li>Customer Satisfaction</li>
+                            <li>Integrity</li>
+                            <li>Innovation</li>
+                            <li>Excellence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------------Services-------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"><span>Our</span> Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-plane"></i>
+                <h2>Flight Booking</h2>
+                <p>We offer competitive prices on flight bookings to destinations around the world.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hotel"></i>
+                <h2>Hotel Reservations</h2>
+                <p>Find the best deals on hotels, from budget to luxury accommodations.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-car"></i>
+                <h2>Car Rentals</h2>
+                <p>Convenient and affordable car rental services for your travel needs.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Tour Packages</h2>
+                <p>Explore our range of tour packages tailored to every kind of traveler.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------Packages-------------------------------------------->
+<div id="packages">
+    <div class="container">
+        <h1 class="sub-title"><span>Travel</span> Packages</h1>
+        <div class="package-list">
+            <div class="package">
+                <img src="lib\img\Services\tour2.jpg">
+                <div class="layer">
+                    <h3>Beach Getaway</h3>
+                    <p>Relax on the sunny beaches with our all-inclusive packages.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="package">
+                <img src="lib\img\Services\tour1.jpg">
+                <div class="layer">
+                    <h3>Adventure Trip</h3>
+                    <p>Experience thrilling adventures with our curated packages.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="package">
+                <img src="lib\img\Services\tour4.jpg">
+                <div class="layer">
+                    <h3>City Tours</h3>
+                    <p>Explore the world's most famous cities with our guided tours.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="package">
+                <img src="lib\img\Services\tour3.jpg">
+                <div class="layer">
+                    <h3>Cruise Packages</h3>
+                    <p>Enjoy luxury cruises to various destinations with all amenities.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!---------------------------CONTACT----------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"><span>Contact</span> Us</h1>
+                <a href="https://mail.google.com/mail"><i class="fa-sharp fa-solid fa-paper-plane"></i> contact@travelnow.com</a>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/travelnow"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/travelnow"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/travelnow"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/travelnow"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/travelnow"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="src\bin\images\Brochure.pdf" download class="btn btn2">Download Brochure</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © 2024 TravelNow. All Rights Reserved.</p>
+    </div>
+</div>
+
+<!---------------------------JAVA SCRIPT----------------------------------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ["TravelNow", "Your Travel Partner", "&", "Adventure Awaits"],
+        typeSpeed: 90,
+        backSpeed: 20,
+        loop:true
+    });
+</script>
+<!----------------------------JAVA SCRIPT----------------------------------------->
+
+</body>
+</html>
